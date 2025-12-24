@@ -37,10 +37,8 @@ class FeesSchema:
     
     required_cols = (
         "trade_id", 
-        "exchange_fees",
-        "broker_commissions",
-        "liquidity_rebates",
-        "routing_fees",     
+        "fees",
+        "rebates",
     )
 
 
