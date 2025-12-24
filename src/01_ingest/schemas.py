@@ -7,7 +7,7 @@ class FillsSchema:
 
     """ FILLS SCHEMA """
 
-    optional_cols = (
+    required_cols = (
         "trade_id",
         "timestamp",
         "symbol",
@@ -22,14 +22,11 @@ class PricesSchema:
 
     """ PRICES SCHEMA """
 
-    optional_cols = (
+    required_cols = (
         "date",
         "symbol",
         "close",  
         "timestamp",     
-        "mid",
-        "bid",
-        "ask",
     )
 
 
@@ -38,7 +35,7 @@ class FeesSchema:
 
     """ FEES SCHEMA """
     
-    optional_cols = (
+    required_cols = (
         "trade_id", 
         "exchange_fees",
         "broker_commissions",
